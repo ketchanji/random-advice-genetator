@@ -56,10 +56,10 @@
     height: 40px;
     cursor: pointer;
     position: absolute;
-    left: 11.6rem;
-    top: 13rem;
+    left: 11.4rem;
+    top: 10rem;
     border-radius: 40%;
-    background-color: hsl(150, 100%, 66%);
+    background-color: hsl(234, 100%, 66%);
     transition: .7s ease;
 }
 .dice img{
@@ -106,8 +106,8 @@
         height: 40px;
         cursor: pointer;
         position: absolute;
-        left: 16.6rem;
-        top: 17rem;
+        left: 15.8rem;
+        top: 13.5rem;
         border-radius: 40%;
         background-color: hsl(150, 100%, 66%);
         transition: .7s ease;
