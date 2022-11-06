@@ -1,14 +1,15 @@
-// const adviceText = document.querySelector(".body .numero"),
-// adviceId = document.querySelector(".heading span"),
-// adviceBtn = document.querySelector(".dice");
-// console.log("adviceBtn");
+const adviceText = document.querySelector(".body span"),
+adviceId = document.querySelector(".heading span"),
+adviceBtn = document.querySelector(".dice");
 
 
-// function randomAdvice(){
-//     quoteBtn.innerText = "Loading Advice....";
-//     fetch("https://api.adviceslip.com").then(res => res.json()).then(result =>{
-//         quoteText.innerText = result.content;
-//         authorName.innerText = result.author; 
-//    });
+function randomAdvice(){
+    fetch("https://api.adviceslip.com/advice").then((res) => res.json()).then(result =>{
+       console.log(result)
+       adviceText.innerText = result.slip.advice;
+       adviceId.innerText = result.slip.id;
+    });
+}
 
-// }
+adviceBtn.addEventListener("click", randomAdvice);
+
