@@ -5,7 +5,6 @@ adviceBtn = document.querySelector(".dice");
 
 function randomAdvice(){
     fetch("https://api.adviceslip.com/advice").then((res) => res.json()).then(result =>{
-       console.log(result)
        adviceText.innerText = result.slip.advice;
        adviceId.innerText = result.slip.id;
     });
